@@ -1,0 +1,12 @@
+ipywidgets
+matplotlib
+notebook
+pytorch-lightning
+scikit-learn
+tensorboard
+torch
+torchdiffeq
+torchsde
+tqdm
+pot
+arviz
