@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learndiffeq"
+version = "0.0.1"
+description = "Riemannian stochastic interpolants for amorphous particle systems"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Louis Grenioux" },
+    { name = "Leonardo Galliano" },
+    { name = "Ludovic Berthier" },
+    { name = "Giulio Biroli" },
+    { name = "Marylou Gabrié" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2512.16607"
+Dataset = "https://doi.org/10.5281/zenodo.17966995"
+
+[tool.setuptools.packages.find]
+include = ["learndiffeq*"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }

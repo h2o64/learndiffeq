@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+build/
+dist/
+
+venv/
+.venv/
+env/
+
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+
+# Local figure-generation script and data caches
+scripts/
+data/
+datasets/
+results/
+checkpoints/
+lightning_logs/
+tb_logs/
+*.ckpt
+*.pt
