@@ -74,7 +74,7 @@ python experiments/training_rfm.py \
     --velocity_type particles_equivariant \
     --egnn_hidden_nf 32 --egnn_n_layers 3 \
     --batch_size 256 --n_epochs 1250 --lr 1e-3 \
-    --use_data_aug --use_ema \
+    --use_ema \
     --enable_ess_callback
 ```
 
@@ -85,9 +85,6 @@ Useful flags:
   flow matching and the maximum-likelihood ODE objective.
 * `--velocity_type` chooses the network: `particles_equivariant` (toroidal EGNN),
   `mlp,128,128,128`, `mlp_no_angle`, etc.
-* `--use_data_aug` augments each epoch with the symmetry group of the system
-  (intra-species permutations, random translations on the torus, axis swaps and sign
-   flips). See `apply_augmentation_parameters` in `training_rfm.py`.
 * `--use_ema` enables exponential moving averages of the network weights.
 * `--enable_ess_callback` periodically logs the importance-sampling Effective Sample
   Size against the Boltzmann distribution.
